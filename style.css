@@ -1,25 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body {
     width: 1200px;
     height: 1400px;
     margin: 25px auto !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: antiquewhite;
 }
 
 
-.atas1 {
+.navbar {
     width: 1200px;
     height: 50px;
-    background-color: #817373;
-    color: aliceblue;
+    background-color: #5A827E;
+    color: #FAFFCA;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
 
-.atas1 ul {
+.navbar ul {
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
 }
+
 .title li {
     padding-left: 10px;
 }
@@ -29,50 +33,58 @@ body {
 }
 
 .menu li a {
-    color: aliceblue;
+    color: #FAFFCA;
     text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #B9D4AA;
+    padding: 2px 3px;
+    color: #3f6864;
+    border-radius: 5px;
 }
 .atas2{
     width: 1200px;
     height: 450px;
-    background-color: rgb(252, 223, 186);
+    background-color: #B9D4AA;
 }
 
 .tengah1 {
     width: 300px;
     height: 300px;
-    background-color: yellow;
+    background-color: #84AE92;
     float: left;
 }
 .tengah2 {
     width: 300px;
     height: 300px;
-    background-color: goldenrod;
+    background-color: #f6ffa7;
     float: left;
 }
 .tengah3 {
     width: 300px;
     height: 300px;
-    background-color: blue;
+    background-color: #84AE92;
     float: left;
 }
 
 .tengah4 {
     width: 300px;
     height: 300px;
-    background-color:  green;
+    background-color:  #f6ffa7;
     float: left;
 }
 .kanan {
     width: 1200px;
     height: 700px;
-    background-color: rgb(193, 230, 243);
+    background-color: #B9D4AA;
 }
 .bawah {
     width: 1200px;
     height: 40px;
     clear: both;
-    background-color:  #817373;
+    background-color:  #5A827E;
+    color: #FAFFCA;
 }
 
 
