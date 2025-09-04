@@ -1,0 +1,153 @@
+body {
+    width: 1200px;
+    height: 1400px;
+    margin: 25px auto !important;
+}
+
+
+.atas1 {
+    width: 1200px;
+    height: 50px;
+    background-color: #817373;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.atas1 ul {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.title li {
+    padding-left: 10px;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.menu li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.atas2{
+    width: 1200px;
+    height: 450px;
+    background-color: rgb(252, 223, 186);
+}
+
+.tengah1 {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    float: left;
+}
+.tengah2 {
+    width: 300px;
+    height: 300px;
+    background-color: goldenrod;
+    float: left;
+}
+.tengah3 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    float: left;
+}
+
+.tengah4 {
+    width: 300px;
+    height: 300px;
+    background-color:  green;
+    float: left;
+}
+.kanan {
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(193, 230, 243);
+}
+.bawah {
+    width: 1200px;
+    height: 40px;
+    clear: both;
+    background-color:  #817373;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
