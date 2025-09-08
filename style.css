@@ -47,6 +47,38 @@ body {
     width: 1200px;
     height: 450px;
     background-color: #B9D4AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-animasi {
+    font-size: 48px;
+    font-weight: 600;
+    min-width: 280px;
+    color: #f4ff95;
+}
+
+.text-animasi span {
+    position: relative;
+}
+
+.text-animasi span::before {
+    content: "Muhammad Asfa Devano";
+    color: #3f6864;
+    animation: words 20s infinite;
+}
+
+.text-animasi span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px);
+    height: 80%;
+    right: -8px;
+    background-color: #B9D4AA;
+    border-left: 2px solid #f4ff95;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
 .tengah1 {
@@ -74,6 +106,14 @@ body {
     background-color:  #f6ffa7;
     float: left;
 }
+
+.img img{
+    width: 280px;
+    height: 250px;
+    margin: 25px 10px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 .kanan {
     width: 1200px;
     height: 700px;
@@ -87,6 +127,37 @@ body {
     color: #FAFFCA;
 }
 
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #B9D4AA;
+
+    }
+}
+
+@keyframes words {
+    0%, 25% {
+        content: "Muhammad Asfa Devano"
+    }
+    26%,51% {
+        content: "a Footballer";
+    }
+    52%,76% {
+        content: "a Programmer";
+    }
+    77%,100% {
+        content: "a Web Developer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 6px);
+    }
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
