@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Devano- HTML CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff6e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background-color: #fff;
+            display: grid;
+            margin: 50px;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+        }
+        .container .left-side {
+            position: relative;
+            background-color: black;
+            padding: 40px;
+        }
+        .container .right-side {
+            position: relative;
+            background-color: #ffebc5;
+            padding: 60px;
+        }
+        .fotoProfil {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .fotoProfil img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .namaProfil {
+            text-align: center;
+            text-shadow: 3px 2px 3px rgba(0,0,0,0.5);
+        }
+        .namaProfil h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: #f7b054;
+            line-height: 1.2em;
+        }
+        .namaProfil span {
+            font-size: 26px;
+            font-weight: 600;
+            color: #f7b054;
+        }
+        .namaProfil hr {
+            color: black;
+            margin-top: 10px;
+            border: 0.5px solid black;
+        }
+        
+        .title {
+            position: relative;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffdc9a;
+            margin-top: 20px;
+            text-shadow: 2px 1px 4px rgba(0,0,0,0.5);
+        }
+        .kontak ul {
+            position: relative;
+        }
+        .kontak ul li {
+            font-size: 15px;
+            color: #fcebcd;
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .skill ul li, .pendidikan ul li {
+            font-size: 15px;
+            color: #fcebcd;
+            position: relative;
+            list-style: none;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        .skill ul li .percent {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #fcebcd;
+            border-radius: 5px;
+        }
+        .skill .title, .pendidikan .title {
+            margin-top: 40px;
+        }
+        .title2 {
+            margin-top: 10px;
+            font-size: 28px;
+            color: #f7b054;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        .tentang p {
+            font-size: 15px;
+            margin-top: 5px;
+            color: black;
+        }
+
+        .pengalaman .box {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0
+        }
+
+        .pengalaman .box .thn_tmpt {
+            min-width: 150px;
+        }
+        .pengalaman .box .thn_tmpt h5 {
+            font-size: 14px;
+            color: rgb(97, 93, 93);
+            margin-bottom: 10px;
+        }
+        .pengalaman .box .text h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #fac785;
+            
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        .pengalaman .box .text p {
+            font-size: 15px;
+            color: black;
+            text-align: justify;
+            line-height: 1.6em;
+        }
+
+        .hobi ul {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .hobi ul li {
+            font-size: 15px;
+            color: black;
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="fotoProfil">
+                <img src="img/IMG_20241127_075000.jpg" alt="">
+            </div>
+
+            <!-- Kontak -->
+            <div class="kontak">
+                <h2 class="title">Contact Info</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                        <span class="text">0882-1292-5132</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">masfadevano72@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+                        <span class="text">m.a.devano</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                        <span class="text">MAsfaDevano72</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                        <span class="text">Bandung, Jawa Barat</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Kontak -->
+
+            <!-- Skill -->
+            <div class="skill">
+                <h2 class="title">Skill</h2>
+                <ul>
+                    <li>
+                        <span class="text">HTML CSS</span>
+                        <div class="percent" style="width: 70%;"></div>
+                    </li>
+                    <li>
+                        <span class="text">Javascript</span>
+                        <div class="percent" style="width: 60%;"></div>
+                    </li>
+                    <li>
+                        <span class="text">Laravel</span>
+                        <div class="percent" style="width: 70%;"></div>
+                    </li>
+                    <li>
+                        <span class="text">Github</span>
+                        <div class="percent" style="width: 50%;"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Skill -->
+
+            <!-- Pendidikan -->
+            <div class="pendidikan">
+                <h2 class="title">Education</h2>
+                <ul>
+                    <li>
+                        <h4>SMK INSAN TAZAKKA</h4>
+                        <hr>
+                        <span class="text">Teknik Komputer Jaringan dan Telekomunikasi</span>
+                        <p style="font-size: 12px; color: #fcebcd;">2021 - 2024</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Pendidikan -->
+
+        </div>
+        <!-- End Left Side -->
+
+        <!-- Right Side -->
+        <div class="right-side">
+            <!-- Nama Profil -->
+            <div class="namaProfil">
+                <h2>Muhammad Asfa Devano</h2>
+                <span>Web Developer</span>
+                <hr>
+            </div>
+            <!-- End Nama Profil -->
+
+            <!-- Tentang Saya -->
+            <div class="tentang">
+                <h2 class="title2">About Me</h2>
+                <p style="margin-top: 20px; text-align: justify; line-height: 1.6em;">
+                    Saya adalah Fresh Graduate yang memiliki minat besar dalam bidang teknologi informasi, khususnya dalam pengembangan web. Saya telah mempelajari berbagai bahasa pemrograman seperti HTML, CSS, dan JavaScript, serta framework seperti Laravel. Saya sangat antusias untuk terus belajar dan mengembangkan keterampilan saya di bidang ini.
+                </p>
+            </div>
+            <!-- End Tentang saya-->
+
+            <!-- Pengalaman -->
+            <div class="pengalaman">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="thn_tmpt">
+                        <h5>Jun 2022 - Sep 2022</h5>
+                        <h5>Media Computer</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Magang - Teknisi</h4>
+                        <p>Saya memiliki pengalaman magang  selama 3 bulan di Media Computer, disana saya bertugas sebagai Teknisi. Tugas saya disana antara lain, Merakit Komputer dan Menginstalasi aplikasi-aplikasi yang dibutuhkan pelanggan.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thn_tmpt">
+                        <h5>Mei 2025 - Jul 2025</h5>
+                        <h5>Jabar Istimewa Digital Academy</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Peserta Pelatihan</h4>
+                        <p>Saya pernah mengikuti pelatihan yang diselenggarakan oleh Jabar Istimewa Digital Academy selama 3 bulan secara Online, selama mengikuti pelatihan saya diajari tentang <strong>Next Js dan Generative AI</strong>, dan juga membuat sebuah project web sebagai tugas akhir.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pengalaman -->
+
+            <!-- Hobi -->
+            <div class="hobi">
+                <h2 class="title2">Hobby</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-futbol"></i></span>
+                        <span>Sepakbola</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-code"></i></span>
+                        <span>Coding</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-tools"></i></span>
+                        <span>Crafting</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-film"></i></span>
+                        <span>Nonton Film</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-book"></i></span>
+                        <span>Baca Buku</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-music"></i></span>
+                        <span>Mendengarkan Musik</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Hobi -->
+        </div>
+        <!-- End Right Side -->
+    </div>
+</body>
+</html>
